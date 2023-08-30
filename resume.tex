@@ -1,0 +1,279 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = red,
+            urlcolor  = black,
+            citecolor = black,
+            anchorcolor = black]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\hypersetup{pdfborder = 0 0 0}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Amit Ramrakhyani} \\ \vspace{1pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ 93283-00751 ~
+    \href{mailto:amit.ramrakhyani1109@gmail.com}{\faEnvelope\ amit.ramrakhyani1109@gmail.com} ~ 
+    \href{https://linkedin.com/in/amit-ramrakhyani-73b076214/}{\faLinkedin\ Amit-Ramrakhyani}  ~
+    \href{https://github.com/Amit-Ramrakhyani}{\faGithub\ Amit-Ramrakhyani}
+    \vspace{-8pt}
+\end{center}
+
+
+% -----------Summary-----------
+% \section{Objective}
+%   \small{Enter your objective here}
+% \vspace{-12pt}
+% adjust vscape based on the space you want to leave between each section.
+
+%-----------Technical Skilss-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Languages/Database}{: Python, C++, Julia, C, R, MySQL, Java, Bash, MATLAB} \\
+     \textbf{Libraries}{: Numpy, Pandas, MatplotLib, Seaborn, Sklearn, OpenCV, PIL, PyTorch} \\
+     \textbf{Software \& Tools}{: Linux, Arduino, Git, Raspberry Pi, Robotic Operating System, Jupyter}\\
+     
+    }}
+ \end{itemize}
+ \vspace{-20pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology, Computer Engineering}{2021 -- Present}
+      {Pandit Deendayal Energy University, Gandhinagar}{CGPA: 9.83}
+      %leave a line after this
+      
+      % \small{\textbf{Coursework: Course-1, Course-2, Course-3, Course-4}}
+      
+    \resumeSubheading
+      {Class XII }{2021}
+      {Airport School, Ahmedabad}{91.4\% }
+      %leave a line after this
+      
+      % \small{\textbf{Coursework: Course-1, Course-2, Course-3, Course-4}}
+
+    \resumeSubheading
+    {Class X }{2019}
+    {Airport School, Ahmedabad}{94.83\% }
+    
+      % \small{\textbf{Coursework: Course-1, Course-2, Course-3, Course-4}}
+
+  \resumeSubHeadingListEnd
+\vspace{-18pt}
+
+%-----------EXPERIENCE-----------
+\section{Co Curricular}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cretus, PDEU }{December, 2021 -- Present}
+      {Technical Lead}{Gandhinagar, Gujarat}
+      \resumeItemListStart
+        \resumeItem {Spearheaded the creation of diverse robots for educational purposes, workshops, and competitions.}
+        \resumeItem {Leveraged cutting-edge technologies such as \textbf{ROS}, \textbf{Raspberry Pi}, \textbf{Arduino}, and \textbf{IoT sensors}.}
+        \resumeItem {Pioneered competitive robot projects including \textbf{Swarm Drones}, \textbf{Line-following robots}, and \textbf{Maze solvers}.}
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {GeeksForGeeks PDEU Chapter, PDEU }{August, 2023 -- Present}
+      {Technical Lead}{Gandhinagar, Gujarat}
+      % \resumeItemListStart
+        % \resumeItem {Build different types of \textbf{robots} for purpose of learning, workshops and compitetions.}
+        % \resumeItem {Worked with technologies and softwares like \textbf{ROS}, \textbf{Raspberry Pi}, \textbf{Arduino} and different IoT sensors.}
+        % \resumeItem {Have build competitive robots like \textbf{Swarm Drones}, \textbf{Line-following robot} and \textbf{Maze solver} etc in the past}
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    % \resumeItemListEnd
+
+    \resumeSubheading
+      {Brahmand, PDEU }{September, 2022 -- Present}
+      {Core Committee Member}{Gandhinagar, Gujarat}
+      \resumeItemListStart
+        \resumeItem {Curated innovative astronomy content for the club's digital platforms.}
+        \resumeItem {Orchestrated astronomy-related events like \textbf{Exploring Chandrayaan-3}, \textbf{Night Sky Gazing}, and \textbf{Planetarium.}}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-6pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Finvest} $|$ \emph{Python, Django, Firebase, MySQL | \href{https://github.com/Preet-Sojitra/finvest}{Git}}}{October, 2022}
+          \resumeItemListStart
+            \resumeItem{ Developed a Django-based \textbf{Web App} for women to publicize their business and get funding, at \textbf{Tic-Tech-Toe’22}
+            hackathon held at DAIICT by IEEE.}
+            \resumeItem{ Used Django framework for both, the frontend and backend part of the web app.}
+            \resumeItem{ Authentication process of the user was done using Firebase.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{SmartGro} $|$ \emph{Python, Tkinter, MySQL | \href{https://github.com/}{Git}}}{April, 2023}
+          \resumeItemListStart
+            \resumeItem{ A smart grocery store where users can browse different products and place orders.}
+            \resumeItem{ Also allows owners to manage their inventory and view sales reports.}
+            \resumeItem{ Working on a recommendation system that will recommend groceries based on purchase history.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{iSpace} $|$ \emph{Python, Tkinter, MySQL | \href{https://github.com/}{Git}}}{May, 2021}
+          \resumeItemListStart
+            \resumeItem{An online testing application for students and teacher to conveniently to give and conduct MCQ based test.}
+            \resumeItem{It assists teachers to make questions according to their requirement.}
+            \resumeItem{Has a feature for displaying marks and percentage along with the analysis of the test including correct option and chosen option.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{Pose-Estimation} $|$ \emph{Python, OpenCV, Mediapipe | \href{https://github.com/avinashkranjan/Amazing-Python-Scripts/tree/master/Pose_Estimation_Using_OpenCV}{Git}}}{August, 2022}
+          \resumeItemListStart
+            \resumeItem{Worked on a script that helps to detect and track any pose in frame.}
+            \resumeItem{It has many implications in the real world like \textbf{yoga poses tracker}, \textbf{posture tracker} for desk jobs individuals.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{Frontier} $|$ \emph{Python, Winget, OS, Tkinter | \href{https://github.com/}{Git}}}{August, 2022}
+          \resumeItemListStart
+            \resumeItem{ Developed a Python application to simplify the process of downloading complex applications using winget, at \textbf{Pythakon’22
+            hackathon} held at CHARUSAT University.}
+            \resumeItem{ Integrated Python with CLI using OS library of python so that winget commands could be executed using python.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeSubHeadingListEnd
+\vspace{-3pt}
+
+
+% %------------Publications-----------
+% \section{Publication}
+% \vspace{-6pt}
+%     \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%     {\textbf{The Title of your paper} $|$ \emph{\href{https://www.researchgate.net}{Publication link}}}{Month Year}
+%     \resumeItemListStart
+%             \resumeItem{Write about your paper.}
+%             \resumeItem{Write about your paper.}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+% \vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Certifications}
+\textbf{Certificate 1: }\href{https://coursera.org/share/c3c05d46f32798c01c06e6f6ee2a0293}{Neural Network and Deep Learning by DeepLearning.AI} \\
+
+
+\section{Achievements}
+  \resumeItemListStart
+    \resumeItem {Won a prize pool of \textbf{1 Lac INR} in the Proof of Concept round of a national level robotics competition \textbf{ROBOFEST 3.0} organized by GUJCOST.}
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+  \resumeItemListEnd
+\vspace{-16pt}
+
+\end{document}
